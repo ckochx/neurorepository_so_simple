@@ -1,11 +1,19 @@
 # Site wide configuration
 
-title: Site Title
+
+# Site settings
+title: Neurorepository for the UIC Department of Neurology
+email: ckoch5@uic.edu
+description: > # The UIC Neurology Neurorepository is a resource for interested neurologists and pyhsicians. This site aims to be both informational and technical in nature and will contain research materials as well as departmental updates.
+baseurl: "" # the subpath of your site, e.g. /blog/
+url: http://localhost:4000
+#url: "http://neurorepository.uic.edu" # the base hostname & protocol for your site
+timezone: 'America/Chicago'
+
+
 locale: en_US
-description: Describe your website here.
 logo: site-logo.png
 search: true
-url: http://localhost:4000
 
 # Jekyll configuration
 
@@ -31,9 +39,8 @@ exclude: ["lib", "config.rb", "Capfile", "config", "log", "Rakefile", "Rakefile.
 
 # Site owner
 owner:
-  name: Your Name
-  avatar: bio-photo.jpg
-  email: you@email.com
+  name: UIC Department of Neurology-- NeuroRepository
+  email: ckoch5@uic.edu
   disqus-shortname:
   twitter: #username
   facebook: #username
@@ -48,5 +55,5 @@ owner:
     analytics:
     verify:
     ad-client:
-    ad-slot: 
+    ad-slot:
   bing-verify:

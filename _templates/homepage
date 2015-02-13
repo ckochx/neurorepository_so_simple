@@ -1,0 +1,8 @@
+---
+layout: {{ layout }}
+title: {{ title }}
+modified:
+excerpt:
+image:
+  feature:
+---

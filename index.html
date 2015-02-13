@@ -1,12 +1,25 @@
 ---
 layout: page
-title: Latest Posts
+title: NeuroRepository
 excerpt: "A simple and clean responsive Jekyll theme for words and photos."
 search_omit: true
+image: so-simple-image-6.jpg
 ---
 
+<div class="entry-content">
+  <h2 id="ui-neurorepository">UI NeuroRepository</h2>
+
+  <p>The UI Neurorepository was established to provide a network of resources to integrate human neurological disease specific clinical, electrophysiological, histopathological, imaging, and molecular data; linking molecular information to disease processes in order to generate new research directions.  The UI Neurorepository enables investigators to identify both targets and biomarkers through a unique biorepository that is clinically and anatomically linked to a human subject data repository.  The incorporation of radiological and microscopic images, as well as electrical records that are directly linked to each piece of human brain and other tissues provides a basis for discovery not available through any other tissue bank or data warehouse.</p>
+
+  <p>The UI Neurorepository serves investigators from multiple disciplines, including but not limited to neurology, neurosurgery, psychiatry, neuroscience, neuroimaging, and computational neuroscience.  Our current collection includes thousands of neocortical brain samples from patients undergoing epilepsy surgery where each piece of tissue is linked to imaging, in vivo electrical recordings, and an extensive clinical database.  Studies from this collection have led to multiple important discoveries on the abnormal wiring of the epileptic brain, molecular pathways involved, novel therapeutic targets, and biomarkers.  A second disease is ALS where we collect rapid postmortem autopsy tissues that are directly linked to clinical disease progression.</p>
+
+  <p>Additional information may be found at the UIC <a href="http://chicago.medicine.uic.edu/departments___programs/departments/neurology/">Department of Neurology</a>.</p>
+
+</div><!-- /.entry-content -->
+
+
 <ul class="post-list">
-{% for post in site.posts limit:10 %} 
+{% for post in site.posts limit:10 %}
   <li><article><a href="{{ site.url }}{{ post.url }}">{{ post.title }} <span class="entry-date"><time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%B %d, %Y" }}</time></span>{% if post.excerpt %} <span class="excerpt">{{ post.excerpt }}</span>{% endif %}</a></article></li>
 {% endfor %}
 </ul>
